@@ -10,7 +10,7 @@ services:
       - '9002:9000'
     volumes:
       - ../:/var/www/symfony:cached
-      - ./logs/symfony:/var/www/symfony/var/logs:cached
+      - ../logs/symfony:/var/www/symfony/var/logs:cached
     links:
       - postgres
   nginx:
@@ -22,4 +22,4 @@ services:
     volumes_from:
       - php
     volumes:
-      - ./logs/nginx/:/var/log/nginx:cached
+      - ../logs/nginx/:/var/log/nginx:cached

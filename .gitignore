@@ -23,3 +23,9 @@
 .env.test
 .idea/
 clover.xml
+logs/
+
+###> phpunit/phpunit ###
+/phpunit.xml
+.phpunit.result.cache
+###< phpunit/phpunit ###
