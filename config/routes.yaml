@@ -1,0 +1,6 @@
+index:
+   path: /api/health-check
+   controller: App\Controller\Api\HomeController::index
+welcome:
+   path: /api/welcome
+   controller: App\Controller\Api\HomeController::welcome
