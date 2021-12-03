@@ -14,8 +14,9 @@ RUN curl --insecure https://getcomposer.org/composer.phar -o /usr/bin/composer &
 # Set timezone
 RUN rm /etc/localtime
 RUN ln -s /usr/share/zoneinfo/Europe/Berlin /etc/localtime
-WORKDIR /var/www/symfony
 RUN "date"
-COPY ../../ .
-# RUN ls -la
-# RUN composer install --no-interaction
+
+WORKDIR /var/www/symfony
+COPY ./ /var/www/symfony
+
+RUN composer install --no-interaction
