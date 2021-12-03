@@ -18,5 +18,6 @@ RUN "date"
 
 WORKDIR /var/www/symfony
 COPY ./ /var/www/symfony
+RUN mv .env.test .env
 
 RUN composer install --no-interaction

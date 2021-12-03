@@ -20,7 +20,6 @@
 ###< symfony/web-server-bundle ###
 
 .env
-.env.test
 .idea/
 clover.xml
 logs/
